@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+
+        
+        <!--==================== SWIPER CSS ====================-->
+        <link rel="stylesheet" href="static/css/swiper-bundle.min.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="static/css/styles.css">
+
+        <title>Responsive Portfolio Website</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Mahuthu</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-user nav__icon"></i> About
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class="uil uil-briefcase-alt nav__icon"></i> Skills
+                            </a>
+                        </li>   
+                        <li class="nav__item">
+                            <a href="#qualifications" class="nav__link">
+                                <i class="uil uil-file-alt nav__icon"></i> Qualifications
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">
+                                <i class="uil uil-scenery nav__icon"></i> Portfolio
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">
+                                <i class="uil uil-message nav__icon"></i> Contactme
+                            </a>
+                        </li>
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <!--Theme change button--> 
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__social">
+                            <a href="https://www.linkedin.com/in/peter-mahuthu/" target="_blank" class="home__social-icon">
+                                <i class="uil uil-linkedin"></i>
+                            </a>
+                            <a href="https://twitter.com/MahuthuPeter" target="_blank" class="home__social-icon">
+                                <i class="uil uil-twitter"></i>
+                            </a>
+                            <a href="https://github.com/mahuthu" target="_blank" class="home__social-icon">
+                                <i class="uil uil-github"></i>
+                            </a>
+                            <a href="https://medium.com/@mahuthu" target="_blank" class="home__social-icon">
+                                <i class="fab fa-medium"></i>
+                            </a>
+                            <a href="https://mahuthu.hashnode.dev/" target="_blank" class="home__social-icon">
+                                <i class="fab fa-hashnode"></i>
+                            </a>
+                            <a href="https://savannahbuilders.netlify.app/" target="_blank" class="home__social-icon">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                            
+                              
+                        </div>
+
+                        <div class="home__img">
+                            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <mask id="mask0" mask-type="alpha">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                </mask>
+                                <g mask="url(#mask0)">
+                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+
+                                    <image class="home__blob-img" x="0" y="-80" href="static/img/Snapchat-684591802_4.jpg"/>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="home__data">
+                            <h1 class="home__title">Hi, I'm Peter Mahuthu</h1>
+                            <h3 class="home__subtitle">Backend developer | Machine Learning Engineer</h3>
+                            <p class="home__description">I am a versatile tech professional with expertise in Backend Engineering and Machine Learning. I have a strong foundation in building scalable backend systems, designing robust APIs, databases and infrastructure for software applications. My skills also extend to Machine Learning, where I use algorithms and data science techniques to develop predictive models and extract actionable insights from data.  </p>
+                            <a href="#contact" class="button button--flex">
+                                Contact Me <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll down</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>  
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">My Introduction</span>
+
+                <div class="about__container container grid">
+                    <img src="static/img/Snapchat-684591802_4.jpg" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <p class="about__description">I specialize in technologies such as Django and React for software development. I also have experience working with data to build and deploy machine learning models. My skills include data extraction, data mining, data visualization, and predictive modeling using scripting languages like Python and SQL. With a solid background in mathematics, statistics, analysis, and software development I enjoy challenges and am always eager to learn something new, seeking opportunities to expand my knowledge and skills in the ever-evolving tech landscape.</p>
+
+                        <!--<div class="about__info">
+                            <div>
+                                <span class="about__info-title">08+</span>
+                                <span class="about__info-name">Years <br> experience</span>
+                            </div>
+                            <div>
+                                <span class="about__info-title">20+</span>
+                                <span class="about__info-name">Completed <br> projects</span>
+                            </div>
+                            <div>
+                                <span class="about__info-title">08+</span>
+                                <span class="about__info-name">Companies <br> Worked</span>
+                            </div>
+                        </div>-->
+
+                        <div class="about__buttons">
+                            <a download="" href="GitHub Pages Build Process: If you're using a static site generator or build process (such as Jekyll), ensure that it's configured correctly to include files from your static folder during the build process.static/pdf/Mahuthu cv.pdf" class="button button--flex">
+                                Download CV<i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SKILLS ====================-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">My Skills</span>
+
+                <div class="skills__container container grid">
+                    <div>
+                        <!--==================== SKILLS 1 ====================-->
+                        <div class="skills__content skills__open">
+                            <div class="skills__header">
+                                <i class="uil uil-brackets-curly skills__icon"></i>
+
+                                <div>
+                                    <h1 class="skills__title">Backend developer | Machine Learning Engineer</h1>
+                                    <span class="skills__subtitle">I am skilled in:</span>
+                                </div>
+                            </div>
+
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Python/Django/Flask</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__ml"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Machine learning</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__python"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Js(React)/HTML/CSS/</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__SQL"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">SQL</h3>
+                                        <span class="skills__number">75%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__SQL"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Tableau</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__SQL"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Tensor flow/Scikit Learn</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__sk"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">MS EXCEL</h3>
+                                        <span class="skills__number">65%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__tf"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Microsoft Azure</h3>
+                                        <span class="skills__number">60%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__excel"></span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">AWS</h3>
+                                        <span class="skills__number">50%</span>
+                                    </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage skills__azure"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== QUALIFICATION ====================-->
+            <section class="qualification section" id="qualifications">
+                <h2 class="section__title">Qualifications</h2>
+                <span class="section__subtitle">My personal journey</span>
+
+                <div class="qualification__container container grid">
+                    <div class="qualification__tabs">
+                        <div class="qualification__button button--flex qualification__active" data-target="#education">
+                            <i class="uil uil-graduation-cap qualification__icon"></i>
+                            Education
+                        </div>
+                        <div class="qualification__button button--flex qualification__active" data-target="#work">
+                            <i class="uil uil-briefcase-alt qualification__icon"></i>
+                            Work
+                        </div>  
+                    </div>
+
+                    <div class="qualification__sections">
+                    <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                        <div class="qualification__content qualification__active" data-content id="education">
+                        <!--==================== QUALIFICATION 1 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <div class="qualification__calender">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        <!-- 2018 - 2022 -->
+                                    </div>
+
+                                    <h3 class="qualification__title">Mathematics and Computer Science</h3>
+                                    <span class="qualification__subtitle">Kenyatta University</span>
+
+                                    <p class="qualification__grade">Grade: Second Class Honors</p>
+                                    <p class="qualification__description">- Pursued a Bachelor's degree in Mathematics and Computer Science. I acquired skills in various statistical areas such as data analysis, probability and hypothesis testing as well as time series analysis and software development. </p>
+                                    
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                            <!--==================== QUALIFICATION 2 ====================-->
+
+                            <div class="qualification__data">
+                                <div>
+                                    <div class="qualification__calender">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        <!-- 2018 - 2022 -->
+                                    </div>
+
+                                    <h3 class="qualification__title">CPA</h3>
+                                    <span class="qualification__subtitle">KCA University</span>
+
+                                    <p class="qualification__grade">Grade: CPA 1 & 2</p>
+                                    
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+
+                        <!--==================== QUALIFICATION 3 ====================-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <div class="qualification__calender">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        <!-- 2013 - 2016 -->
+                                    </div>
+                                    
+                                    <h3 class="qualification__title">Kenya Certificate of Secondary Education</h3>
+                                    <span class="qualification__subtitle">Njoro Boys High School</span>
+                                    
+                                    <p class="qualification__grade">Grade: A-</p>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+
+                            </div>
+                            
+                        <!--==================== QUALIFICATION 4 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <div class="qualification__calender">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        <!-- 2020 -->
+                                    </div>
+
+                                    <h3 class="qualification__title">Machine Learning</h3>
+                                    <span class="qualification__subtitle">Tech Camp Kenya</span>
+
+                                    <p class="qualification__grade">Grade: Certificate</p>
+                                    <p class="qualification__description">- I was introduced to  machine learning and i got to learn about Exploratory Data Analysis as well as various libraries such as Tensor Flow, Scikit-Learn and NLTK. </p>
+                                    
+                                    <div class="qualification__calender">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        
+                                    </div>
+
+                                    <h3 class="qualification__title">IBM Data Science</h3>
+                                    <span class="qualification__subtitle">Cousera</span>
+
+                                    <p class="qualification__grade">Grade: Certificate</p>
+                                    <p class="qualification__description">- Machine Learning Algorithms, Data Analysis and Visualization, Data Modeling, Feature Engineering, SQL, Python (Programming Language), Data Wrangling, Data Methodology, . </p>
+                                        
+
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                        <div class="qualification__content qualification__active" data-content id="work">
+                        <!--==================== QUALIFICATION 1 ====================-->
+                            <div class="qualification__data">
+                                <div>
+                                    <div class="qualification__calender">
+                                        <i class="uil uil-calendar-alt"></i>
+                                       2024- Present
+                                    </div>
+
+                                    <h3 class="qualification__title">Machine Learning Engineer</h3>
+                                    <span class="qualification__subtitle">Omdena</span>
+
+                                    <p class="qualification__grade">Apprenticeship</p>
+                                    <p class="qualification__description">
+                                        <b>Role Description</b><br>
+                                        I handle and execute various tasks like building and deploying machine learning
+                                        models. I have successfully translated business needs into data models that form the backbone of
+                                        sustainable data solutions.<br>
+                                        -  I also work extensively with data
+                                        mining techniques, data wrangling and big data processing, strongly emphasizing data quality and
+                                        reducing redundancy.<br>
+                                        - I create interactive data dashboards to identify
+                                        trends that delivered actionable insights to drive strategic decision-making.. </p> </p>
+                                    
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+                            </div>
+                        <!--==================== QUALIFICATION 2 ====================-->
+                        
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <div class="qualification__calender">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2022 - Present
+                                    </div>
+                                    
+                                    <h3 class="qualification__title">Web Developer</h3>
+                                    <span class="qualification__subtitle">Savannah Tech</span>
+                                    
+                                    <p class="qualification__grade">Contract</p>
+                                    <p class="qualification__description">
+                                        <b>Role Description</b><br>
+                                        - Develop in-house web applications using Django and React Js<br>
+                                        - Incorporate API’s to several third party applications and stored data in different database
+                                        management systems like PostgreSQL Mongo DB and MySQL backend.<br>
+                                        - Make changes and maintain the existing software and look for ways to improve performance and
+                                        efficiency.<br>
+                                        - Work collaboratively with other software engineers to formulate machine learning solutions and
+                                        iterate on models to achieve desired outcome<br>
+                                    
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                            </div>
+
+
+                        <!--==================== QUALIFICATION 3 ====================-->
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                                <div>
+                                    <div class="qualification__calender">
+                                        <i class="uil uil-calendar-alt"></i>
+                                        2020 - 2022
+                                    </div>
+                                    
+                                    <h3 class="qualification__title">System Administrator </h3>
+                                    <span class="qualification__subtitle">Wytech Technologies</span>
+                                    
+                                    <p class="qualification__grade">Contract</p>
+                                    <p class="qualification__description">
+                                        <b>Role Description</b><br>
+                                        - My role was to control access and permissions for users to define what a user can see and do within
+                                        the organization. I also performed software updates and routine maintenance on computers, printers
+                                        and copy machines.<br>
+                                        - Customized Salesforce to meet the unique needs of the organization. This includes creating
+                                        custom objects, fields, and work flows, setting up custom user interfaces, and configuring data
+                                        validation and automation rules<br>
+                                        - Audited client records to record revenue and ensure all recovery activities and follow-ups are
+                                        properly documented and filed in customers credit files.<br>
+                                        - Initiated customer engagements through various communication channels (phone, email, Whats
+                                        App, Interactive SMS, Chat.) while maintaining a high level of professionalism<br>
+                                        - Managed a social media account to advertise the enterprise's products and services
+                                    </p>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line"></span>
+                                </div>
+
+                            </div>
+
+
+                        <!--==================== QUALIFICATION 4 ====================-->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <div class="qualification__calender">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2019
+                                </div>
+                                
+                                <h3 class="qualification__title">Technical Support </h3>
+                                <span class="qualification__subtitle"> Kenya Power</span>
+                                
+                                <p class="qualification__grade">Internship</p>
+                                <p class="qualification__description">
+                                    <b>Role Description</b><br>
+                                    - My role involved configuring the company’s hardware and software as well as carrying out structured
+                                    cabling and computer networking. I also carried out domain administration and end-user support<br>
+                                    - Utilized virtualization technologies like VMware and Hyper-V and use of third-party sources like
+                                    Wireshark, Powershell ISE and RSAT Tools for windows 10.<br>
+                                    - Email and internet configuration<br>
+                                    - Troubleshooting and general network maintenance<br>
+                                    - System installations, maintenance and updates, managing backups and disaster recovery<br>
+                                    - Formulating, implementing and review of ICT policies, procedures, strategies and systems, to
+                                    support the implementation of strategies set by the Board.<br>
+                                    - Provide information, feedback and guidance to support technology-related decisions.<br>
+                                    - Enforcing adherence to ICT Policy by all staff and ensuring compliance with ICT regulations and
+                                    advice management on optimization of ICT resource<br>
+                                </p>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                        </div>
+
+                            
+
+
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== SERVICES ====================
+            <section class="services section" id="services">
+                <h2 class="section__title">Services</h2>
+                <span class="section__subtitle">What I offer</span>
+
+                <div class="services__container container grid">
+            ==================== SERVICES 1====================
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-web-grid services__icon"></i>
+                            <h3 class="services__title">Tool <br> 1</h3>
+                        </div>
+
+                        <span class="button button--flex button--small button--link services__button">
+                            View More
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Tool <br> 1</h4> 
+                                <i class="uil uil-times services__modal-close"></i> 
+                            </div> 
+                        </div>
+                    </div>   
+                </div>
+            </section>-->
+
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Projects</span>
+
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
+            <!--==================== PORTFOLIO 1 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="static/img/cart.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">eCommerce website</h3>
+                                <p class="portfolio__description">An e-commerce website built with React and Django, incorporates JWT authentication for secure user access, Pesapal payment gateway for seamless online payments, and MongoDB for scalable database management. This combination ensures a secure, reliable, and feature-rich online shopping experience while providing flexibility for future growth and enhancements</p>
+                                <a href="https://kofia.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
+                                    View Site
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="static/img/savannahai.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Company website</h3>
+                                <p class="portfolio__description">A company website project leveraging the robustness of Flask for backend development, React with Vite for dynamic frontend experiences, and Tailwind CSS for sleek and responsive styling. Lucide React icons enhance the visual appeal, creating an interactive user interface. MySQL handles efficient data storage and retrieval, ensuring scalability. Additionally, the website incorporates Session-Based Authentication (Flask-Session) for secure user access and personalized experiences.</p>
+                                <a href="https://savannahai.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
+                                    View Site
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="static/img/blog.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Blog website</h3>
+                                <p class="portfolio__description"> A blog website project leveraging Django for backend development and HTML/CSS/JS for frontend development, creating a user-friendly and visually appealing platform for article sharing and reader engagement. PostgreSQL serves as the database management system, efficiently storing and retrieving blog posts, comments, and other data..</p>
+                                <a href="https://savannah-ai.onrender.com/" target="_blank" class="button button--flex button--small portfolio__button">
+                                    View Site
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="static/img/Creditcardfrauddetection.jpeg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Credit Card Fraud Detection Model</h3>
+                                <p class="portfolio__description">The project is a classification problem on credit card fraud detection. The data I used was preprocessed and PCA transformed. I conducted data mining and created visualizations using libraries such as matplotlib and seaborn to understand patterns in the data. I performed data balancing using simple oversampling and undersampling techniques and iterated various classification models over the balanced data . I then performed anomaly detection by using isolation forest to identify anomalous data points. The best performing model was the Random Forest model with an F1 score of 0.74.</p>
+                                <a href="https://github.com/mahuthu/credit-card-fraud-detection" target="_blank" class="button button--flex button--small portfolio__button">
+                                    View on GitHub
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+            <!--==================== PORTFOLIO 2 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="static/img/bankchurn.jpeg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Bank Churn Model</h3>
+                                <p class="portfolio__description">The project is on bank churn prediction where I created a model to predict whether a bank customer will churn. I used visualizations such as countplots, pie charts and scatterplots to analyze the data. I also conducted data mining by checking correlations within the data. I encoded categorical features and standardized the data to put the variables on the same scale. I then balanced the data and fit it into a logistic regression model. The ROC AUC score improved after balancing the data from the performance of the base model by 0.11.</p>
+                                <a href="https://github.com/mahuthu/bank_churn_model" target="_blank" class="button button--flex button--small portfolio__button">
+                                    View on GitHub
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+            <!--==================== PORTFOLIO 3 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="static/img/disastertweets.jpeg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Disaster Tweets Model</h3>
+                                <p class="portfolio__description">This is a Natural Language Processing(NLP) project where the goal was to create a model to predict tweets about real disasters and those that are not. I started with exploratory analysis where I checked the distribution of the text data and plotted visualizations to understand the underlying structure of the data. I then conducted text preprocessing techniques such as lower-casing and the removal of punctuation and tags. I used TfidfVectorizer to transform the text data and fit it on a logistic regression model that attained a ROC AUC score of 0.64.</p>
+                                <a href="https://github.com/mahuthu/disaster-tweets-classification" target="_blank" class="button button--flex button--small portfolio__button">
+                                    View on GitHub
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+            <!--==================== PORTFOLIO 4 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="static/img/zindi2.jpeg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Kiswahili Text to Speech Model</h3>
+                                <p class="portfolio__description">Fine-tuning XLS-R Wav2Vec2 model for Swahili Automatic Speech Recognition.
+                                    Wav2Vec2 is a pre-trained model for Automatic Speech Recognition (ASR).
+                                    Performed fine-tuning on XLS-R using the Mozilla Common Voice 13.0 Swahili dataset</p>
+                                <a href="https://github.com/mahuthu/mozilla_common-_voice" class="button button--flex button--small portfolio__button">
+                                    View on GitHub
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+                    
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <!--==================== PROJECT IN MIND ====================--
+            <section class="project section">
+
+            </section>
+
+            --==================== TESTIMONIAL ====================--
+            <section class="testimonial section">
+                
+            </section> -->
+
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
+                <h2 class="section__title">Contact Me</h2>
+                <span class="section__subtitle">Get in touch</span>
+
+                <div class="contact__container container grid">
+                    <div>
+                        <div class="contact__information">
+                            <i class="uil uil-phone contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Call Me</h3>
+                                <span class="contact__subtitle">+254-793-704-217</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-envelope contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <span class="contact__subtitle">mahuthup@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="contact__information">
+                            <i class="uil uil-map-marker contact__icon"></i>
+
+                            <div>
+                                <h3 class="contact__title">Location</h3>
+                                <span class="contact__subtitle">Nairobi - Kenya</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact__form grid">
+                        <div class="contact__inputs grid">
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Name</label>
+                                <input type="text" class="contact__input">
+                            </div>
+                            <div class="contact__content">
+                                <label for="" class="contact__label">Email</label>
+                                <input type="email" class="contact__input">
+                            </div>
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Message</label>
+                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        </div>
+
+                        <div>
+                            <a href="#" class="button button--flex">
+                                Send Message
+                                <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Peter Mahuthu</h1>
+                    <span class="footer__subtitle">Backend Developer| Machine Learning Engineer</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#skills" class="footer__link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contactme</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://www.linkedin.com/in/peter-mahuthu/" target="_blank" class="footer__socials">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/mahuthu/" target="_blank" class="footer__socials">
+                        <i class="uil uil-github"></i>
+                    </a>  
+                    <a href="https://twitter.com/MahuthuPeter" target="_blank" class="footer__socials">
+                        <i class="uil uil-twitter"></i>
+                    </a>
+                    <a href="https://medium.com/@mahuthu" target="_blank" class="footer__socials">
+                        <i class="fab fa-medium"></i>
+                    </a>
+                    <a href="https://mahuthu.hashnode.dev/" target="_blank" class="footer__socials">
+                        <i class="fab fa-hashnode"></i>
+                    </a>
+                    
+
+
+                
+                </div>
+            </div>
+         </div>
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+
+        <!--==================== SWIPER JS ====================-->
+        <script src="static/js/swiper-bundle.min.js"></script>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="static/js/main.js"></script>
+    </body>
+</html>
