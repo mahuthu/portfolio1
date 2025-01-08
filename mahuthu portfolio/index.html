@@ -174,6 +174,132 @@
                     </div>
                 </div>
             </section>
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">Projects</span>
+
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
+            <!--==================== PORTFOLIO 1 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="static/img/tiba.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">TIBA HIMS</h3>
+                                <p class="portfolio__description">Tiba is an AI-powered Hospital Information Management System (HIMS) designed to streamline hospital operations. Built with Django for the backend, Next.js with Tailwind CSS for the frontend, and PostgreSQL for the database, it integrates Celery and Redis for task management and features a LangChain-powered chatbot for virtual assistance. Containerized with Docker and deployed on Google Cloud Platform (GCP), Tiba offers role-based dashboards, real-time notifications, and advanced AI-driven features for efficient healthcare management.</p>
+                                <a href="https://tiba.co.ke" target="_blank" class="button button--flex button--small portfolio__button">
+                                    View Site
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="static/img/cart.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">eCommerce website</h3>
+                                <p class="portfolio__description">Developed a full-stack e-commerce solution featuring a React-based customer frontend and admin dashboard, with a Node.js/Express backend. Integrated Daraja for payments and Firebase for image storage. Utilized MongoDB for data persistence. Containerized with Docker and deployed on Google Cloud Platform using Kubernetes (GKE) with load balancing</p>
+                                <a href="https://kofia.co.ke" target="_blank" class="button button--flex button--small portfolio__button">
+                                    View Site
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="static/img/sav1.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">company website</h3>
+                                <p class="portfolio__description">A company website project leveraging the robustness of Flask for backend development, React with Vite for dynamic frontend experiences, and Tailwind CSS for sleek and responsive styling. Lucide React icons enhance the visual appeal, creating an interactive user interface. MySQL handles efficient data storage and retrieval, ensuring scalability. Additionally, the website incorporates Session-Based Authentication (Flask-Session) for secure user access and personalized experiences.</p>
+                                <a href="https://savannahai.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
+                                    View Site
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="static/img/blog.png" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Blog website</h3>
+                                <p class="portfolio__description"> A blog website project leveraging Django for backend development and HTML/CSS/JS for frontend development, creating a user-friendly and visually appealing platform for article sharing and reader engagement. PostgreSQL serves as the database management system, efficiently storing and retrieving blog posts, comments, and other data..</p>
+                                <a href="https://savannah-ai.onrender.com/" target="_blank" class="button button--flex button--small portfolio__button">
+                                    View Site
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="static/img/Creditcardfrauddetection.jpeg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Credit Card Fraud Detection Model</h3>
+                                <p class="portfolio__description">The project is a classification problem on credit card fraud detection. The data I used was preprocessed and PCA transformed. I conducted data mining and created visualizations using libraries such as matplotlib and seaborn to understand patterns in the data. I performed data balancing using simple oversampling and undersampling techniques and iterated various classification models over the balanced data . I then performed anomaly detection by using isolation forest to identify anomalous data points. The best performing model was the Random Forest model with an F1 score of 0.74.</p>
+                                <a href="https://github.com/mahuthu/credit-card-fraud-detection" target="_blank" class="button button--flex button--small portfolio__button">
+                                    View on GitHub
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+            <!--==================== PORTFOLIO 2 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="static/img/bankchurn.jpeg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Bank Churn Model</h3>
+                                <p class="portfolio__description">The project is on bank churn prediction where I created a model to predict whether a bank customer will churn. I used visualizations such as countplots, pie charts and scatterplots to analyze the data. I also conducted data mining by checking correlations within the data. I encoded categorical features and standardized the data to put the variables on the same scale. I then balanced the data and fit it into a logistic regression model. The ROC AUC score improved after balancing the data from the performance of the base model by 0.11.</p>
+                                <a href="https://github.com/mahuthu/bank_churn_model" target="_blank" class="button button--flex button--small portfolio__button">
+                                    View on GitHub
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+            <!--==================== PORTFOLIO 3 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="static/img/disastertweets.jpeg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Disaster Tweets Model</h3>
+                                <p class="portfolio__description">This is a Natural Language Processing(NLP) project where the goal was to create a model to predict tweets about real disasters and those that are not. I started with exploratory analysis where I checked the distribution of the text data and plotted visualizations to understand the underlying structure of the data. I then conducted text preprocessing techniques such as lower-casing and the removal of punctuation and tags. I used TfidfVectorizer to transform the text data and fit it on a logistic regression model that attained a ROC AUC score of 0.64.</p>
+                                <a href="https://github.com/mahuthu/disaster-tweets-classification" target="_blank" class="button button--flex button--small portfolio__button">
+                                    View on GitHub
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+
+            <!--==================== PORTFOLIO 4 ====================-->
+                        <div class="portfolio__content grid swiper-slide">
+                            <img src="static/img/zindi2.jpeg" alt="" class="portfolio__img">
+
+                            <div class="portfolio__data">
+                                <h3 class="portfolio__title">Kiswahili Text to Speech Model</h3>
+                                <p class="portfolio__description">Fine-tuning XLS-R Wav2Vec2 model for Swahili Automatic Speech Recognition.
+                                    Wav2Vec2 is a pre-trained model for Automatic Speech Recognition (ASR).
+                                    Performed fine-tuning on XLS-R using the Mozilla Common Voice 13.0 Swahili dataset</p>
+                                <a href="https://github.com/mahuthu/mozilla_common-_voice" class="button button--flex button--small portfolio__button">
+                                    View on GitHub
+                                    <i class="uil uil-arrow-right button__icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next">
+                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+                    
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
 
             <!--==================== SKILLS ====================-->
             <section class="skills section" id="skills">
@@ -214,7 +340,7 @@
                                 </div>
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">Js(React)/HTML/CSS/</h3>
+                                        <h3 class="skills__name">Js(React, Node, Next)/HTML/CSS/</h3>
                                         <span class="skills__number">70%</span>
                                     </div>
                                     <div class="skills__bar">
@@ -252,7 +378,7 @@
                                 </div>
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">MS EXCEL</h3>
+                                        <h3 class="skills__name">MS Office(Excel)</h3>
                                         <span class="skills__number">65%</span>
                                     </div>
                                     <div class="skills__bar">
@@ -261,7 +387,7 @@
                                 </div>
                                 <div class="skills__data">
                                     <div class="skills__titles">
-                                        <h3 class="skills__name">Microsoft Azure</h3>
+                                        <h3 class="skills__name">GCP</h3>
                                         <span class="skills__number">60%</span>
                                     </div>
                                     <div class="skills__bar">
@@ -617,132 +743,7 @@
                 </div>
             </section>-->
 
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section__title">Portfolio</h2>
-                <span class="section__subtitle">Projects</span>
-
-                <div class="portfolio__container container swiper-container">
-                    <div class="swiper-wrapper">
-            <!--==================== PORTFOLIO 1 ====================-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="static/img/tiba.png" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">TIBA HIMS</h3>
-                                <p class="portfolio__description">Tiba is an AI-powered Hospital Information Management System (HIMS) designed to streamline hospital operations. Built with Django for the backend, Next.js with Tailwind CSS for the frontend, and PostgreSQL for the database, it integrates Celery and Redis for task management and features a LangChain-powered chatbot for virtual assistance. Containerized with Docker and deployed on Google Cloud Platform (GCP), Tiba offers role-based dashboards, real-time notifications, and advanced AI-driven features for efficient healthcare management.</p>
-                                <a href="https://tiba.co.ke" target="_blank" class="button button--flex button--small portfolio__button">
-                                    View Site
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="static/img/cart.png" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">eCommerce website</h3>
-                                <p class="portfolio__description">Developed a full-stack e-commerce solution featuring a React-based customer frontend and admin dashboard, with a Node.js/Express backend. Integrated Daraja for payments and Firebase for image storage. Utilized MongoDB for data persistence. Containerized with Docker and deployed on Google Cloud Platform using Kubernetes (GKE) with load balancing</p>
-                                <a href="https://kofia.co.ke" target="_blank" class="button button--flex button--small portfolio__button">
-                                    View Site
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="static/img/savannahai.png" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Company website</h3>
-                                <p class="portfolio__description">A company website project leveraging the robustness of Flask for backend development, React with Vite for dynamic frontend experiences, and Tailwind CSS for sleek and responsive styling. Lucide React icons enhance the visual appeal, creating an interactive user interface. MySQL handles efficient data storage and retrieval, ensuring scalability. Additionally, the website incorporates Session-Based Authentication (Flask-Session) for secure user access and personalized experiences.</p>
-                                <a href="https://savannahai.netlify.app/" target="_blank" class="button button--flex button--small portfolio__button">
-                                    View Site
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="static/img/blog.png" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Blog website</h3>
-                                <p class="portfolio__description"> A blog website project leveraging Django for backend development and HTML/CSS/JS for frontend development, creating a user-friendly and visually appealing platform for article sharing and reader engagement. PostgreSQL serves as the database management system, efficiently storing and retrieving blog posts, comments, and other data..</p>
-                                <a href="https://savannah-ai.onrender.com/" target="_blank" class="button button--flex button--small portfolio__button">
-                                    View Site
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="static/img/Creditcardfrauddetection.jpeg" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Credit Card Fraud Detection Model</h3>
-                                <p class="portfolio__description">The project is a classification problem on credit card fraud detection. The data I used was preprocessed and PCA transformed. I conducted data mining and created visualizations using libraries such as matplotlib and seaborn to understand patterns in the data. I performed data balancing using simple oversampling and undersampling techniques and iterated various classification models over the balanced data . I then performed anomaly detection by using isolation forest to identify anomalous data points. The best performing model was the Random Forest model with an F1 score of 0.74.</p>
-                                <a href="https://github.com/mahuthu/credit-card-fraud-detection" target="_blank" class="button button--flex button--small portfolio__button">
-                                    View on GitHub
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-            <!--==================== PORTFOLIO 2 ====================-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="static/img/bankchurn.jpeg" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Bank Churn Model</h3>
-                                <p class="portfolio__description">The project is on bank churn prediction where I created a model to predict whether a bank customer will churn. I used visualizations such as countplots, pie charts and scatterplots to analyze the data. I also conducted data mining by checking correlations within the data. I encoded categorical features and standardized the data to put the variables on the same scale. I then balanced the data and fit it into a logistic regression model. The ROC AUC score improved after balancing the data from the performance of the base model by 0.11.</p>
-                                <a href="https://github.com/mahuthu/bank_churn_model" target="_blank" class="button button--flex button--small portfolio__button">
-                                    View on GitHub
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-            <!--==================== PORTFOLIO 3 ====================-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="static/img/disastertweets.jpeg" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Disaster Tweets Model</h3>
-                                <p class="portfolio__description">This is a Natural Language Processing(NLP) project where the goal was to create a model to predict tweets about real disasters and those that are not. I started with exploratory analysis where I checked the distribution of the text data and plotted visualizations to understand the underlying structure of the data. I then conducted text preprocessing techniques such as lower-casing and the removal of punctuation and tags. I used TfidfVectorizer to transform the text data and fit it on a logistic regression model that attained a ROC AUC score of 0.64.</p>
-                                <a href="https://github.com/mahuthu/disaster-tweets-classification" target="_blank" class="button button--flex button--small portfolio__button">
-                                    View on GitHub
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-
-            <!--==================== PORTFOLIO 4 ====================-->
-                        <div class="portfolio__content grid swiper-slide">
-                            <img src="static/img/zindi2.jpeg" alt="" class="portfolio__img">
-
-                            <div class="portfolio__data">
-                                <h3 class="portfolio__title">Kiswahili Text to Speech Model</h3>
-                                <p class="portfolio__description">Fine-tuning XLS-R Wav2Vec2 model for Swahili Automatic Speech Recognition.
-                                    Wav2Vec2 is a pre-trained model for Automatic Speech Recognition (ASR).
-                                    Performed fine-tuning on XLS-R using the Mozilla Common Voice 13.0 Swahili dataset</p>
-                                <a href="https://github.com/mahuthu/mozilla_common-_voice" class="button button--flex button--small portfolio__button">
-                                    View on GitHub
-                                    <i class="uil uil-arrow-right button__icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Add Arrows -->
-                    <div class="swiper-button-next">
-                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                    </div>
-                    
-                    <!-- Add Pagination -->
-                    <div class="swiper-pagination"></div>
-                </div>
-            </section>
+           
 
             <!--==================== PROJECT IN MIND ====================--
             <section class="project section">
